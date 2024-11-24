@@ -800,20 +800,10 @@ img {
     transition-property: background-color, border, fill;
 }
 
-.modal-form-checkbox-icon {
-    opacity: 0;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: opacity;
-}
-
 .input-checkbox:checked + .modal-form-agreement-label > .modal-form-checkbox {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
-}
-
-input[type='checkbox']:checked + .modal-form-agreement-label .modal-form-checkbox .modal-form-checkbox-icon {
-    opacity: 1;
 }
 
 .modal-form-link {
