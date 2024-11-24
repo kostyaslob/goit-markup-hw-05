@@ -508,7 +508,7 @@
     </footer>
     <!-- endregion -->
     <!-- #region modal window -->
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
       <div class="modal">
         <button class="modal-button-close" type="button">
           <svg class="modal-button-close-icon" width="8" height="8">
@@ -561,12 +561,12 @@
               </svg>
             </div>
           </div>
-          <div class="modal-form-field">
-            <label class="modal-form-label" for="user-textarea">Comment</label>
+          <div class="modal-form-field textarea">
+            <label class="modal-form-label" for="user-comment">Comment</label>
             <textarea
               class="modal-form-textarea"
-              name="user-textarea"
-              id="user-textarea"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -575,13 +575,14 @@
             <input
               class="visually-hidden"
               type="checkbox"
-              id="user-agreement"
-              name="user-agreement"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
               checked
             />
-            <label class="modal-form-agreement-label" for="user-agreement">
+            <label class="modal-form-agreement-label" for="user-privacy">
               <span class="modal-form-checkbox">
-                <svg class="modal-form-checkbox-icon" width="10" height="10">
+                <svg class="modal-form-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>

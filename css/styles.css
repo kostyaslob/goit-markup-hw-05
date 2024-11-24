@@ -677,7 +677,7 @@ img {
 
 .modal-button-close-icon {
     fill: #2e2f42;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: fill;
 }
 
@@ -739,21 +739,33 @@ img {
     pointer-events: none;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: fill;
-
 }
 
 .modal-form-input:focus + .modal-form-icon {
     fill: #4d5ae5;
 }
 
+.modal-form-field.textarea {
+    margin-bottom: 16px;
+}
+
 .modal-form-textarea {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+
     width: 100%;
     height: 120px;
     padding: 8px 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     outline: transparent;
+    background-color: transparent;
     resize: none;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border-color;
 }
 
 .modal-form-textarea:focus {
@@ -770,11 +782,12 @@ img {
 input[type='checkbox']:checked + 
 .modal-form-agreement-label .modal-form-checkbox {
     background-color: #404bbf;
-    border: 1px solid #404bbf;
+    border: none;
+    fill: #F4F4FD;
 
 }
 
-input[type='checkbox']:checked+
+input[type='checkbox']:checked +
 .modal-form-agreement-label .modal-form-checkbox .modal-form-checkbox-icon {
     opacity: 1;
 }
@@ -800,8 +813,9 @@ input[type='checkbox']:checked+
     border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
     cursor: pointer;
+    fill: transparent;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: background-color, border;
+    transition-property: background-color, border, fill;
 }
 
 .modal-form-checkbox-icon {
@@ -823,12 +837,13 @@ input[type='checkbox']:checked+
     margin: 0 auto;
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
 
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
     border: none;
+    cursor: pointer;
 
     font-weight: 500;
     font-size: 16px;
