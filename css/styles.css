@@ -806,11 +806,17 @@ img {
     transition-property: opacity;
 }
 
-input[type='checkbox']:checked + .modal-form-agreement-label > .modal-form-checkbox {
+.input-checkbox:checked +.modal-form-agreement-label>.modal-form-checkbox {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
 }
+
+/* input[type='checkbox']:checked + .modal-form-agreement-label > .modal-form-checkbox {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+} */
 
 input[type='checkbox']:checked + .modal-form-agreement-label .modal-form-checkbox .modal-form-checkbox-icon {
     opacity: 1;
